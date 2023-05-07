@@ -1,4 +1,4 @@
-loadDataMenu().catch(handleError);
+loadDataMenu()//.catch(handleError);
 
 const copy_code = (opj) => {
     navigator.clipboard.writeText(opj.parentElement.childNodes[2].childNodes[1].textContent)
