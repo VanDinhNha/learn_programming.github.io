@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="./../style_layout.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="loading"></div>
+        <div class="authentication">
+            <div class="header">
+                <div class="top">
+                    <div class="dots">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                      </div>
+                </div>
+                <a href="./login.html" id="tab_login" class="tab">
+                    <span>Đăng Nhập</span>
+                </a>
+                <a href="./register.html" id="tab_register" class="tab tab-acctive">
+                    <span>Đăng Ký</span>
+                </a>
+            </div>
+            <div class="body">
+                <div class="register-form">
+                    <div class="row justify-content-between">
+                        <a class="title link" href="/">Trang Chủ</a>
+                        <span class="title color-white">Đăng Ký</span>
+                    </div>
+                    <form id="register" method="post">
+                        <div class="form-input">
+                            <input type="text" class="form-control" autocomplete="off" id="username" required="" autocomplete="off">
+                            <label class="form-label bg-dark" spellcheck="false" for="username">Tài Khoản</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="form-control" autocomplete="off" id="displayname" required="" autocomplete="off">
+                            <label class="form-label bg-dark" spellcheck="false" for="displayname">Tên Hiển Thị</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" class="form-control" autocomplete="off" id="email" required="" autocomplete="off">
+                            <label class="form-label bg-dark" spellcheck="false" for="email">Email</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" class="form-control" autocomplete="off" id="password" required="" autocomplete="off">
+                            <label class="form-label bg-dark" spellcheck="false" for="password">Mật Khẩu</label>
+                        </div>
+                        <div class="form-input">
+                            <input type="password" class="form-control" autocomplete="off" id="confirm_password" required="" autocomplete="off">
+                            <label class="form-label bg-dark" spellcheck="false" for="confirm_password">Xác Nhận Mật Khẩu</label>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="form-group">
+                                <input class="hidden" type="checkbox" id="cbx_register">
+                                <label for="cbx_register" class="check">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                                        <polyline points="1 9 7 14 15 4"></polyline>
+                                    </svg>
+                                </label>
+                                <label for="cbx_register" class="cbx-text">Tôi đồng ý với tất cả <a class="link" href="#">điều khoản</a> của trang web</label>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="btn bg-blue">Đăng Ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="notification"></div>
+    <script src="./../script_layout.js"></script>
+    <script>
+        const Loading = document.querySelector(".loading");
+   </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+
+
+/* content */
+.content-body{
+    max-width: 980px;
+    margin: 4rem auto 1rem auto;
+    transition: linear .3s;
+    /* background-image: linear-gradient(to right, var(--color-main1), var(--color-main2));
+    -webkit-background-clip: text; */
+}
+.content-body-name{
+    text-align: center;
+    margin: 20px 0px;
+     background-image: linear-gradient(to right, var(--color-main1), var(--color-main2));
+    -webkit-background-clip: text;
+}
+.content-body-name::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    margin: 10px auto;
+    background-image: linear-gradient(to right, var(--color-main1), var(--color-main2));
+    transition: linear .3s;
+}
+.content-body-name--text{
+    font-size: 60px;
+    color: transparent;
+    font-weight: bold;
+}
+.content-body-detail{
+    padding: 0px .5rem;
+}
+.content-body-detail__title--text{
+    color: var(--color-text-active);
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.content-body--title{
+    font-size: 2rem;
+    color: transparent;
+    margin: 1rem 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.content-body--describe, .content-body-detail__code--describe{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 1rem 0 0 0;
+    line-height: 2rem;
+    padding: 0 10px;
+}
+.content-body--image, .content-body-detail__image{
+    max-width: 90%;
+    max-height: 400px;
+    object-fit: contain;
+    margin: 1rem auto .5rem auto;
+    border-radius: 10px
+}
+.content-body--describe-image, .content-body-detail--describe-image{
+    text-align: center;
+    color: transparent;
+    font-size: 12px;
+    margin-top: -9px;
+}
+.content-body--attention, .content-body-detail__code--attention{
+    font-size: 1rem;
+    color: transparent;
+    margin: 1rem;
+    line-height: 1.5rem;
+    padding: 10px;
+    font-style: italic;
+    border-left: solid .5rem var(--color-main1);
+    box-shadow: 0px 0px 10px var(--background-dark);
+}
+.content-body-detail__code{
+    margin: -10px 0rem 10px 0rem;
+}
+.deckgo-highlight-code-carbon{
+    background-color: var(--background-code);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    overflow-x: auto;
+    font-weight: bold;
+}
+.btn-copy{
+    position: relative;
+    top: 35px;
+    left: 95%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: linear .3s;
+    opacity: 0;
+}
+.content-body-detail__code:hover .btn-copy{
+    opacity: 1;
+}
+.btn-copy:active{
+    top: 20px
+}
+.cotent-body-detail__code--demo{
+    min-height: 100px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.loading-code{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(110deg, #d5d5d5 8%, #f5f5f5 18%, #d5d5d5 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+    color: transparent;
+    margin-top: 15px;
+    visibility: visible;
+}
+@keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+}
+
+@media (min-width: 992px) {
+    
+}
+
+/*ui tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-body{
+        transition: linear .3s;
+    }
+    .content{
+        width: 100%;
+    }
+    .content-body-name::after{
+        width: 70%;
+    }
+    .btn-copy{
+        opacity: 1;
+    }
+}
+
+/*ui mobile*/
+@media (max-width: 767px) {
+    .content-body{
+        transition: linear .3s;
+    }
+    .content-body-name::after{
+        width: 90%;
+    }
+    .content-body-name--text{
+        font-size: 40px;
+        transition: linear .3s;
+    }
+    .btn-copy{
+        opacity: 1;
+        left: 90%;
+        transition: linear 2s;
+    }
+}

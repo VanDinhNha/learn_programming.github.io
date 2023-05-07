@@ -1,0 +1,41 @@
+.content-body{
+    margin-top: 4rem;
+    padding: 10px;
+}
+
+.sticky{
+    overflow: auto;
+    max-height: 800px;
+}
+.layout{
+    grid-template-columns: 1fr;
+}
+table{
+    width: 100%;
+    color: var(--color-text);
+}
+table thead{
+    position: sticky;
+    inset: 0;
+}
+table thead th{
+    padding: 15px 30px;
+    color: #fff;
+    background-color: var(--color-text);
+    font-weight: bold;
+    white-space: nowrap;
+}
+table tbody td{
+    padding: 10px 30px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+table tbody tr{
+    background-color: var(--background-dark);
+}
+tr:hover{
+    transition: .5s;
+    background-image: linear-gradient(to right, var(--color-main1), var(--color-main2));
+    color: var(--background-main);
+}

@@ -1,0 +1,14 @@
+.content-body{
+    margin-top: 4rem;
+    padding: 10px;
+}
+.layout{
+    grid-template-columns: 1fr 1fr;
+}
+
+/* ui mobile */
+@media (max-width: 767px) {
+    .layout-item:nth-child(n+1){
+        grid-column: 1/3;
+    }
+}
