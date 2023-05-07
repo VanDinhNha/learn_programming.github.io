@@ -1,17 +1,17 @@
 const url = location.href;
-// const urlRankMenu = 'http://learn-programming-test.com/api/RANK_MENU/';
-// const urlRankMenuChild = 'http://learn-programming-test.com/api/RANK_MENU_CHILD/';
-// const urlMenu = 'http://learn-programming-test.com/api/MENU/';
-// const urlContent = 'http://learn-programming-test.com/api/CONTENT/';
-// const urlClassify = 'http://learn-programming-test.com/api/CLASSIFY/';
-// const urlSearch = 'http://learn-programming-test.com/api/SEARCH?keyword=';
+const urlRankMenu = 'https://localhost:44358/api/RANK_MENU/';
+const urlRankMenuChild = 'https://localhost:44358/api/RANK_MENU_CHILD/';
+const urlMenu = 'https://localhost:44358/api/MENU/';
+const urlContent = 'https://localhost:44358/api/CONTENT/';
+const urlClassify = 'https://localhost:44358/api/CLASSIFY/';
+const urlSearch = 'https://localhost:44358/api/SEARCH?keyword=';
 
-const urlRankMenu = 'http://learn-programming.somee.com/api/RANK_MENU/';
-const urlRankMenuChild = 'http://learn-programming.somee.com/api/RANK_MENU_CHILD/';
-const urlMenu = 'http://learn-programming.somee.com/api/MENU/';
-const urlContent = 'http://learn-programming.somee.com/api/CONTENT/';
-const urlClassify = 'http://learn-programming.somee.com/api/CLASSIFY/';
-const urlSearch = 'http://learn-programming.somee.com/api/SEARCH?keyword=';
+//const urlRankMenu = 'http://learn-programming.somee.com/api/RANK_MENU/';
+//const urlRankMenuChild = 'http://learn-programming.somee.com/api/RANK_MENU_CHILD/';
+//const urlMenu = 'http://learn-programming.somee.com/api/MENU/';
+//const urlContent = 'http://learn-programming.somee.com/api/CONTENT/';
+//const urlClassify = 'http://learn-programming.somee.com/api/CLASSIFY/';
+//const urlSearch = 'http://learn-programming.somee.com/api/SEARCH?keyword=';
 
 const showMenuChild = (obj, obj_id = null) => {
     if(obj !== null){
