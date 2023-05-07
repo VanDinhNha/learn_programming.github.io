@@ -59,7 +59,7 @@ document.querySelector('.menu') !== null ?
     ""
 
 function handleError(err){
-    //window.location='/error.html';
+    window.location='/error.html';
 }
 
 function showModal(id, title, content){
